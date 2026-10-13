@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="service_label">FraudShield Proto</string>
+    <string name="service_desc">Prototype. Notes which app is in front (package name only) and shows a 15-second warning over GPay, PhonePe or Paytm during a live call. It never reads or records text on screen.</string>
+</resources>

@@ -1,0 +1,31 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.nullvariable.fraudshieldproto'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.nullvariable.fraudshieldproto"
+        minSdk 26
+        targetSdk 33
+        versionCode 1
+        versionName "2.0"
+    }
+
+    // Fixed debug key, so new builds install over old ones (adb install -r) without uninstalling.
+    signingConfigs {
+        debug {
+            storeFile file('debug.keystore')
+            storePassword 'android'
+            keyAlias 'androiddebugkey'
+            keyPassword 'android'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
